@@ -58,10 +58,10 @@
   .base {
     display: flex;
     flex-direction: column;
+    width: 80%;
   }
 
   .base h1 {
-    width: 80%;
     height: 150px;
     margin-top: 80px;
     margin-left: 10%;
@@ -74,7 +74,6 @@
   }
 
   .base p {
-    width: 80%;
     height: 146px;
     margin-left: 10%;
     margin-top: 20px;
@@ -87,7 +86,6 @@
   }
 
   .base h2 {
-    width: 80%;
     height: 24px;
     margin-left: 10%;
     margin-top: 40px;
