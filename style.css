@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    font-family: sans-serif, Arial;
+  }
+
+  .logo {
+    width: 22%;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #6070ff;
+    text-decoration: none;
+  }
+
+  .hamburg {
+    width: 60%;
+    height: 12px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  .headline {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    margin-top: 50px;
+    flex-direction: column;
+    background-image: url(/Asset/mobileba.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .base {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .base h1 {
+    width: 80%;
+    height: 150px;
+    margin-top: 80px;
+    margin-left: 10%;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+  }
+
+  .base p {
+    width: 80%;
+    height: 146px;
+    margin-left: 10%;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .base h2 {
+    width: 80%;
+    height: 24px;
+    margin-left: 10%;
+    margin-top: 40px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 10%;
+  }
+}
