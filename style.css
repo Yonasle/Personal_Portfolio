@@ -262,7 +262,7 @@
 
   .about {
     display: flex;
-    width: 100%;
+    width: 99%;
     height: 1000px;
     background: #fff;
     border-top-right-radius: 100px;
@@ -289,7 +289,7 @@
   .about_me p {
     height: 146px;
     margin-left: 10%;
-    margin-top: -60px;
+    margin-top: -75px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -301,7 +301,7 @@
   .about_me h3 {
     height: 24px;
     margin-left: 10%;
-    margin-top: 30px;
+    margin-top: 50px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -315,8 +315,14 @@
     width: 10%;
     height: 3%;
     margin-left: -72%;
-    gap: 10px;
+    gap: 45px;
     margin-top: 385px;
+    list-style-type: none;
+  }
+
+  .socialm li {
+    width: 10%;
+    height: 30px;
   }
 
   .language {
@@ -426,7 +432,7 @@
 
   .language h3 {
     height: 24px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: -22%;
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -437,15 +443,15 @@
   }
 
   .arrow1 {
-    height: 3%;
-    width: 6%;
+    height: 1%;
+    width: 7%;
     margin-left: 160%;
     margin-top: -10%;
   }
 
   .arrow2 {
-    height: 3%;
-    width: 6%;
+    height: 1%;
+    width: 7%;
     margin-left: 160%;
     margin-top: -10%;
   }
