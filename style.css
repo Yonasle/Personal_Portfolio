@@ -197,10 +197,11 @@
   .lang {
     list-style-type: none;
     margin-top: -40px;
-    gap: 20px;
   }
 
   .html {
+    float: left;
+    margin-left: 3%;
     width: 60px;
     height: 28px;
     margin-left: 10%;
@@ -217,6 +218,8 @@
   }
 
   .css {
+    float: left;
+    margin-left: 3%;
     width: 60px;
     height: 28px;
     border-radius: 8px;
@@ -232,6 +235,8 @@
   }
 
   .js {
+    float: left;
+    margin-left: 3%;
     width: 92px;
     height: 28px;
     background: #ebebff;
