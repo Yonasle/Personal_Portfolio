@@ -195,7 +195,6 @@
   }
 
   .lang {
-    display: flex;
     list-style-type: none;
     margin-top: -40px;
     gap: 20px;
