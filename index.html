@@ -19,6 +19,11 @@
       <a href="#" class="logo">My Logo</a>
       <nav>
         <img src="/Asset/hamburg.svg" class="hamburg" alt="" />
+        <ul class="navbar">
+          <li>Portfolio</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
       </nav>
     </header>
     <section class="headline">
@@ -132,11 +137,11 @@
         <h3>LET'S CONNECT</h3>
       </div>
       <ul class="socialm">
-        <li><img src="/Asset/github.svg" alt="" /></li>
-        <li><img src="/Asset/linkedin.svg" alt="" /></li>
-        <li><img src="/Asset/angellist.svg" alt="" /></li>
-        <li><img src="/Asset/twitter.svg" alt="" /></li>
-        <li><img src="/Asset/meduim.svg" alt="" /></li>
+        <li><img src="/Asset/github.svg" alt="Github" /></li>
+        <li><img src="/Asset/linkedin.svg" alt="Linkedin" /></li>
+        <li><img src="/Asset/angellist.svg" alt="Angellist" /></li>
+        <li><img src="/Asset/twitter.svg" alt="Twitter" /></li>
+        <li><img src="/Asset/meduim.svg" alt="Medium" /></li>
       </ul>
       <div class="language">
         <button class="gmr">Get my resume</button>
@@ -153,10 +158,51 @@
             <img src="/Asset/css.svg" alt="CSS" /><span>CSS</span>
           </li>
         </ul>
-        <h2>Frameworks</h2>
-        <img src="/Asset/arrowr.svg" class="arrow1" alt="" />
-        <h3>Skills</h3>
-        <img src="/Asset/arrowr.svg" class="arrow2" alt="" />
+        <ul class="list">
+          <li>
+            <h2>Frameworks</h2>
+            <img src="/Asset/arrowr.svg" class="arrow1" alt="" />
+          </li>
+          <li>
+            <h3>Skills</h3>
+            <img src="/Asset/arrowr.svg" class="arrow2" alt="" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="descr">
+        <h1>Contact me</h1>
+        <p>
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it!
+        </p>
+        <form action="https://formspree.io/f/mdovljrd" method="POST">
+          <ul class="the-relative">
+            <li class="tname">
+              <input
+                type="text"
+                maxlength="30"
+                placeholder="Your name"
+                required
+              />
+            </li>
+            <li class="mail">
+              <input type="email" placeholder="Your email" required />
+            </li>
+            <li class="texts">
+              <input
+                type="text"
+                maxlength="500"
+                class="text-area"
+                placeholder="Write your message here..."
+                required
+              />
+            </li>
+          </ul>
+          <button class="submit">Get in touch</button>
+        </form>
       </div>
     </section>
   </body>
