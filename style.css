@@ -592,6 +592,15 @@
     font-size: 20px;
     color: #6070ff;
   }
+  .submit:hover {
+    background-color: #6070ff;
+    color: #ffffff;
+    border-color: #2230d2;
+  }
+  .submit:active {
+    background-color: #2230d2;
+    color: #ffffff;
+  }
 }
 
 @media only screen and (min-width: 768px) {
