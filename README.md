@@ -32,12 +32,14 @@
   -CSS
   -FLEXBOX
   -GRID
+  -FORM
 
 ### Key Features <a name="key-features"></a>
 
 - **[Header]**
 - **[WORK SECTION]**
 - **[ABOUT ME]**
+- **[Contact SECTION]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
@@ -93,7 +95,7 @@ To run the project, execute the following command:
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-A big thanks to my coding partner [Troos](https://github.com/Kgomotso196/)
+A big thanks to my coding partner [Martin](https://github.com/Mar12358)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
