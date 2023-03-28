@@ -43,9 +43,11 @@
   nav {
     display: flex;
   }
+
   .navbar {
     display: none;
   }
+
   .headline {
     display: flex;
     width: 100vw;
@@ -208,13 +210,13 @@
     border-radius: 8px;
     background: #ebebff;
     transition: transform 1s, box-shadow 0.5s;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
   }
+
   .html:hover {
-    transform: scale(1.2);
+    transform: scale(1.2) rotate(45deg);
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
     background: #172b4d;
-    transform: rotate(360deg);
   }
 
   li.html {
@@ -224,6 +226,7 @@
     padding: 5px 0 0 10px;
     color: #6070ff;
   }
+
   li.html:hover {
     font-size: 16px;
     font-weight: 500;
@@ -279,14 +282,16 @@
     background-color: white;
     font-size: 23px;
   }
+
   .seepro:hover {
     background-color: #6070ff;
     color: white;
     border-color: #6070ff;
   }
+
   .seepro:active {
     background-color: #2230d2;
-    color: #ffffff;
+    color: #fff;
     border-color: #2230d2;
   }
 
@@ -450,6 +455,7 @@
     width: 22%;
     height: 45px;
   }
+
   .list {
     list-style-type: none;
     margin-top: 20px;
@@ -472,6 +478,7 @@
     line-height: 55px;
     margin-right: 0.5em;
   }
+
   .list li h3 {
     height: 24px;
     font-size: 20px;
@@ -481,11 +488,13 @@
     line-height: 55px;
     margin-right: 0.5em;
   }
+
   .list li img {
     height: 1%;
     width: 3%;
     margin-left: 86%;
   }
+
   .contact {
     display: flex;
     width: 100%;
@@ -498,24 +507,27 @@
     background-color: #6070ff;
     border-top-left-radius: 90px;
   }
+
   .descr {
     display: flex;
     flex-direction: column;
     width: 80%;
   }
+
   .descr h1 {
     width: 90%;
     height: 56px;
     margin-top: 100px;
     margin-left: 15%;
     font-size: 40px;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: 52px;
     text-align: center;
-    color: #ffffff;
+    color: #fff;
   }
+
   .descr p {
     width: 100%;
     height: 146px;
@@ -527,7 +539,7 @@
     font-size: 17px;
     line-height: 24px;
     text-align: center;
-    color: #ffffff;
+    color: #fff;
   }
 
   input {
@@ -548,6 +560,7 @@
   input[type="text"] {
     padding-left: 18px;
   }
+
   input[type="email"] {
     padding-left: 18px;
   }
@@ -555,8 +568,9 @@
   .texts input {
     height: 200px;
     width: 110%;
-    padding: 6px 0px 150px 18px;
+    padding: 6px 0 150px 18px;
   }
+
   .the-relative {
     display: flex;
     flex-direction: column;
@@ -579,15 +593,18 @@
     color: #6070ff;
   }
 }
+
 @media only screen and (min-width: 768px) {
   header {
     display: flex;
     justify-content: space-around;
     background-color: #fff;
   }
+
   .hamburg {
     display: none;
   }
+
   .logo {
     width: 50%;
     height: 30px;
@@ -604,15 +621,17 @@
     color: #6070ff;
     text-decoration: none;
   }
+
   nav {
     width: 100%;
   }
+
   .navbar {
     display: flex;
     width: 70%;
     flex-direction: row;
     justify-content: flex-end;
-    margin-top: 0px;
+    margin-top: 0;
     box-sizing: border-box;
   }
 
@@ -625,6 +644,7 @@
   .navbar li:hover {
     border-bottom: #1a2236 solid 2px;
   }
+
   .headline {
     width: 100%;
     height: 720px;
@@ -634,17 +654,18 @@
     background-color: #fff;
     border-bottom-left-radius: 130px;
   }
+
   .base {
     display: flex;
     flex-direction: column;
-
     margin-left: 20%;
   }
+
   .base h1 {
     height: 122px;
     width: 60%;
     margin-top: 250px;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
@@ -652,10 +673,11 @@
     letter-spacing: 0.37px;
     color: #091e42;
   }
+
   .base p {
     height: 98px;
     width: 90%;
-    margin-top: 0px;
+    margin-top: 0;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -663,6 +685,7 @@
     line-height: 28px;
     color: #344563;
   }
+
   .base h2 {
     width: 40%;
     height: 24px;
@@ -673,19 +696,24 @@
     line-height: 24px;
     color: #7f8cff;
   }
+
   .social {
     margin-left: 20%;
     margin-top: 10px;
   }
+
   .social img {
     margin-right: 20px;
   }
+
   .arrow {
     display: none;
   }
+
   .arrow1 {
     display: none;
   }
+
   .arrow2 {
     display: none;
   }
