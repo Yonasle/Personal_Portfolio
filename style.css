@@ -565,6 +565,11 @@ body {
     padding-left: 18px;
   }
 
+  .text-area {
+    height: 150px;
+    padding-top: 30px;
+  }
+
   .texts input {
     height: 200px;
     width: 110%;
