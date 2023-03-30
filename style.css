@@ -779,62 +779,42 @@ body {
     background-color: #f7f7f9;
   }
 
-  .grid_desktop {
-    display: grid;
-    grid-column: 1;
-    width: 95%;
-    margin-left: 5%;
-    border-radius: 20px;
-    height: 600px;
-    margin-bottom: 80px;
-    background-image: url(/Asset/arteto.svg);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-color: #fff;
-  }
-
-  .grid_desktopa {
-    display: grid;
-    grid-column: 1;
-    width: 95%;
-    margin-left: 5%;
-    border-radius: 20px;
-    height: 600px;
-    margin-bottom: 80px;
-    background-image: url(/Asset/proart.svg);
-    background-position: right;
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-color: #fff;
-  }
-
-  .grid_desktopb {
-    display: grid;
-    grid-column: 1;
-    width: 95%;
-    margin-left: 5%;
-    border-radius: 20px;
-    height: 600px;
-    margin-bottom: 80px;
-    background-image: url(/Asset/facebook.svg);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-color: #fff;
-  }
-
+  .grid_desktop,
+  .grid_desktopa,
+  .grid_desktopb,
   .grid_desktopc {
     display: grid;
     grid-column: 1;
     width: 95%;
     margin-left: 5%;
     border-radius: 20px;
-    height: 600px;
+    height: 560px;
     margin-bottom: 80px;
-    background-image: url(/Asset/uber.svg);
-    background-position: right;
     background-size: 50%;
     background-repeat: no-repeat;
     background-color: #fff;
+  }
+
+  .grid_desktop {
+    background-image: url(/Asset/arteto.svg);
+    background-position: left;
+    background-position-x: 15px;
+  }
+
+  .grid_desktopa {
+    background-image: url(/Asset/proart.svg);
+    background-position: right;
+  }
+
+  .grid_desktopb {
+    background-image: url(/Asset/facebook.svg);
+    background-position: left;
+    background-position-x: 15px;
+  }
+
+  .grid_desktopc {
+    background-image: url(/Asset/uber.svg);
+    background-position: right;
   }
 
   .grid_desktop h2 {
