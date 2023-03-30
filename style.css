@@ -779,10 +779,7 @@ body {
     background-color: #f7f7f9;
   }
 
-  .grid_desktop,
-  .grid_desktopa,
-  .grid_desktopb,
-  .grid_desktopc {
+  .grid_card {
     display: grid;
     grid-column: 1;
     width: 95%;
@@ -1610,6 +1607,14 @@ body {
     background: #172b4d;
   }
 
+  li.cjs {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    padding: 5px 0 0 14px;
+    color: #6070ff;
+  }
+
   li.cjs:hover {
     font-size: 14px;
     font-weight: 500;
@@ -1746,7 +1751,7 @@ body {
     height: 100%;
     margin-left: -45px;
     border-radius: 8px;
-    background: #ebebff;
+    background: #f7f7f9;
   }
 
   .lang_drop li {
@@ -1768,7 +1773,7 @@ body {
     height: 100%;
     margin-left: -45px;
     border-radius: 8px;
-    background: #ebebff;
+    background: #f7f7f9;
   }
 
   .cs {
@@ -1776,7 +1781,7 @@ body {
     height: 100%;
     margin-left: -45px;
     border-radius: 8px;
-    background: #ebebff;
+    background: #f7f7f9;
   }
 
   .grid_item {
