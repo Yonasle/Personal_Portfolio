@@ -688,7 +688,7 @@ body {
   }
 
   .logo {
-    width: 50%;
+    white-space: nowrap;
     height: 30px;
     margin-left: 60px;
     margin-top: 30px;
@@ -702,6 +702,10 @@ body {
     text-align: center;
     color: #6070ff;
     text-decoration: none;
+  }
+
+  .logo:hover {
+    transform: scale(1.2) rotate(360deg);
   }
 
   nav {
@@ -803,22 +807,50 @@ body {
     background-image: url(/Asset/arteto.svg);
     background-position: left;
     background-position-x: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .grid_desktop:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   }
 
   .grid_desktopa {
     background-image: url(/Asset/proart.svg);
     background-position: right;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .grid_desktopa:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   }
 
   .grid_desktopb {
     background-image: url(/Asset/facebook.svg);
     background-position: left;
     background-position-x: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .grid_desktopb:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   }
 
   .grid_desktopc {
     background-image: url(/Asset/uber.svg);
     background-position: right;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .grid_desktopc:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   }
 
   .grid_desktop h2 {
