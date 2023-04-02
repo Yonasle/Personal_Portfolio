@@ -704,11 +704,6 @@ body {
     text-decoration: none;
   }
 
-  .logo {
-    transition-property: transform;
-    transition-duration: 1s;
-  }
-
   .logo:hover {
     transform: scale(1.2) rotate(360deg);
   }
@@ -731,9 +726,7 @@ body {
     margin: 38px 25px;
     font-size: 20px;
   }
-  header {
-    padding-left: 100px;
-  }
+
   .headline {
     width: 100%;
     height: 720px;
@@ -814,22 +807,50 @@ body {
     background-image: url(/Asset/arteto.svg);
     background-position: left;
     background-position-x: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .grid_desktop:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   }
 
   .grid_desktopa {
     background-image: url(/Asset/proart.svg);
     background-position: right;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .grid_desktopa:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   }
 
   .grid_desktopb {
     background-image: url(/Asset/facebook.svg);
     background-position: left;
     background-position-x: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .grid_desktopb:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   }
 
   .grid_desktopc {
     background-image: url(/Asset/uber.svg);
     background-position: right;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .grid_desktopc:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   }
 
   .grid_desktop h2 {
