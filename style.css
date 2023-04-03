@@ -57,7 +57,7 @@ body {
     width: 100vw;
     height: 600px;
     flex-direction: column;
-    background-image: url(./Asset/mobileba.svg);
+    background-image: url(Asset/mobileba.SVG);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #fff;
