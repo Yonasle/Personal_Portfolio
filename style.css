@@ -21,7 +21,6 @@ body {
   }
 
   nav {
-    /* padding: 0 32px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,28 +55,36 @@ body {
   }
 
   .hamburg.active {
-    background-image: url("./assets/Icon\ -\ Cancel.png");
+    background-image: url("./assets/surfix.svg");
     background-size: contain;
   }
 
-  nav {
-    display: flex;
-  }
-
   .navbar {
-    /* display: none; */
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: white;
+    background-color: #6070ff;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(6px);
     width: 100%;
     height: 100%;
     padding: 3rem;
     transition: 0.2s;
+    list-style: none;
+  }
+
+  .navbar li {
+    padding: 10px;
   }
 
   .navbar.active {
     left: 0;
+  }
+
+  .navbar a {
+    color: #fff;
+    font-size: 32px;
+    text-decoration: none;
   }
 
   .headline {
@@ -150,7 +157,6 @@ body {
 
   .grid_container {
     display: grid;
-    grid-template-columns: (4, 1fr);
     grid-gap: 10px;
     width: 100%;
     height: auto;
@@ -656,7 +662,6 @@ body {
     flex-direction: column;
     margin-top: -10px;
     width: 100%;
-    justify-content: baseline;
   }
 
   .submit {
@@ -745,7 +750,7 @@ body {
     width: 70%;
     flex-direction: row;
     justify-content: flex-end;
-    margin-top: 0;
+    margin-top: -8px;
     box-sizing: border-box;
   }
 
@@ -753,6 +758,12 @@ body {
     list-style-type: none;
     margin: 38px 25px;
     font-size: 20px;
+  }
+
+  .navbar a {
+    color: #344563;
+    font-size: 32px;
+    text-decoration: none;
   }
 
   .headline {
@@ -810,7 +821,6 @@ body {
 
   .grid_container {
     display: grid;
-    grid-template-columns: (4, 1fr);
     grid-gap: 10px;
     width: 90%;
     height: auto;
@@ -2021,7 +2031,6 @@ body {
     flex-direction: column;
     margin-top: -10px;
     width: 100%;
-    justify-content: baseline;
   }
 
   .submit {

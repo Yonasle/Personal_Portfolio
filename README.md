@@ -33,6 +33,7 @@
   -FLEXBOX
   -GRID
   -FORM
+  -Mobile Menu
 
 ### Key Features <a name="key-features"></a>
 
@@ -89,13 +90,13 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[JavaScript and Dom-Manipulation]**
+- **[Popup Menu and Validation]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-A big thanks to my coding partner [Martin](https://github.com/Mar12358)
+A big thanks to my coding partner [Yousef](https://github.com/ybadr99)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
