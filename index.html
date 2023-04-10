@@ -7,22 +7,17 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-Ep05T+jTkeW8ZV7KoX9p44v1IGaYNSH8V2lCCXP1zTYV7e0ZfEoCtMbmX5+5vPeGk3r3q/U1Iz+c+KYKlwRmwg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
   <body>
     <header>
       <a href="#" class="logo">My Logo</a>
       <nav>
-        <img src="./Asset/hamburg.svg" class="hamburg" alt="Menu" />
+        <!-- <img src="./Asset/hamburg.svg" class="hamburg" alt="Menu" /> -->
+        <div class="hamburg"></div>
         <ul class="navbar">
-          <li>Portfolio</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#work">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -47,10 +42,10 @@
         <a href=""><img src="./Asset/angellist.svg" alt="" /></a>
       </div>
     </section>
-    <section class="work_section">
+    <section class="work_section" id="work">
       <div class="grid_container">
         <div class="grid_item">
-          <img src=".Asset/nasir.svg" alt="Card image" />
+          <img src="./Asset/nasir.svg" alt="Card image" />
           <h2>Tonic</h2>
           <ul class="can">
             <li class="canopy">CANOPY</li>
@@ -204,7 +199,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="about_me">
         <h2>About MySelf</h2>
         <p>
@@ -249,7 +244,7 @@
         </ul>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="descr">
         <h1>Contact me</h1>
         <p>
@@ -292,6 +287,7 @@
         <hr />
       </div>
     </section>
+
+    <script src="./script.js"></script>
   </body>
 </html>
-
