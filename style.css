@@ -309,7 +309,7 @@ body {
     color: #fff;
   }
 
-  .js {
+  .javascript {
     width: 92px;
     height: 28px;
     background: #ebebff;
@@ -318,7 +318,7 @@ body {
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
   }
 
-  li.js {
+  li.javascript {
     font-size: 12px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
@@ -326,13 +326,13 @@ body {
     color: #6070ff;
   }
 
-  .js:hover {
+  .javascript:hover {
     transform: scale(1.2) rotate(360deg);
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
     background: #172b4d;
   }
 
-  li.js:hover {
+  li.javascript:hover {
     font-size: 14px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
