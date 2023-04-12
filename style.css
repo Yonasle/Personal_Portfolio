@@ -318,18 +318,18 @@ body {
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
   }
 
-  .js:hover {
-    transform: scale(1.2) rotate(360deg);
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
-    background: #172b4d;
-  }
-
   li.js {
     font-size: 12px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
     padding: 5px 0 0 14px;
     color: #6070ff;
+  }
+
+  .js:hover {
+    transform: scale(1.2) rotate(360deg);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+    background: #172b4d;
   }
 
   li.js:hover {
