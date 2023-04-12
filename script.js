@@ -104,7 +104,6 @@ data.forEach((item) => {
     langItem.classList.add(lang.toLowerCase());
     langItem.textContent = lang;
     langList.appendChild(langItem);
-    console.log(langItem.classList);
   });
 
   gridItem.appendChild(langList);
