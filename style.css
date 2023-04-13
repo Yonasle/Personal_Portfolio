@@ -684,6 +684,51 @@ body {
     color: white;
     border-color: #2230d2;
   }
+  .popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    width: 80%;
+    height: 80%;
+    background-color: #ffffff;
+  }
+  .popup-container {
+    position: fixed;
+    display: flex;
+    top: 10px;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .pone {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+
+  .pone h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    float: left;
+    margin-left: 3%;
+  }
+
+  .pone img {
+    width: 95%;
+    height: auto;
+    margin-top: 20px;
+  }
 }
 
 .grid_desktop {

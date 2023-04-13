@@ -115,3 +115,97 @@ data.forEach((item) => {
 
   container.appendChild(gridItem);
 });
+const popy = [
+  {
+    imgSrc: "./Asset/nasir.svg",
+    title: "Tonic",
+    canopy: "CANOPY",
+    role: "Back End Dev",
+    year: "2015",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    languages: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    imgSrc: "./Asset/avail.svg",
+    title: "Multi-Post stories",
+    canopy: "CANOPY",
+    role: "Back End Dev",
+    year: "2015",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    languages: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    imgSrc: "./Asset/oval.svg",
+    title: "Tonic",
+    canopy: "CANOPY",
+    role: "Back End Dev",
+    year: "2015",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    languages: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    imgSrc: "./Asset/prof.svg",
+    title: "Multi-Post Stories",
+    canopy: "CANOPY",
+    role: "Back End Dev",
+    year: "2015",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    languages: ["HTML", "CSS", "JavaScript"],
+  },
+];
+
+const popupContainer = document.createElement("div");
+popupContainer.classList.add("popup-container");
+document.body.appendChild(popupContainer);
+
+const seeprobtns = document.querySelectorAll(".seepro");
+seeprobtns.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    // Show the popup for the project at the corresponding index
+    const html = popup(index);
+    popupContainer.innerHTML = html;
+    popupContainer.style.display = "block";
+
+    const closeBtn = document.querySelector(".popup-close-btn");
+    closeBtn.addEventListener("click", () => {
+      popupContainer.style.display = "none";
+    });
+  });
+});
+
+popupContainer.addEventListener("click", (event) => {
+  if (event.target === popupContainer) {
+    popupContainer.style.display = "none";
+  }
+});
+
+function popup(parram) {
+  if (parram < 0 || parram >= popy.length) {
+    // Handle the out-of-bounds case here
+    console.error("Invalid parameter: ", parram);
+    return;
+  }
+  const html = `<div><div class="pone"><h1>${popy[parram].title}</h1> <img src="${popy[parram].imgSrc}"></img></div> <button class="popup-close-btn"></button> </div>`;
+
+  return html;
+}
+
+const seeprobtn = document.querySelectorAll(".seepro");
+
+for (let i = 0; i < seeprobtn.length; i++) {
+  seeprobtn[i].addEventListener("click", () => {
+    popup(0);
+  });
+}
+
+/*
+seeprobtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    popup(0);
+  }); 
+});
+*/
