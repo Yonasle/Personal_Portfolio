@@ -14,6 +14,71 @@ navLinks.forEach((link) => {
   });
 });
 
+const projects = [
+  {
+    name: "Tonic",
+    canopy: "CANOPY",
+    backend: "Back End Dev",
+    year: "2015",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    languages: ["HTML", "Ruby on Rails", "JavaScript", "CSS"],
+  },
+  {
+    name: "Multi-Post Stories",
+    canopy: "Facebook",
+    backend: "Full Stack Dev",
+    year: "2015",
+    description:
+      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
+    languages: ["HTML", "Ruby on rails", "CSS", "JavaScript"],
+  },
+  {
+    name: "Facebook 360",
+    canopy: "CANOPY",
+    backend: "Back End Dev",
+    year: "2015",
+    description:
+      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
+    languages: ["HTML", "Ruby on rails", "CSS", "JavaScript"],
+  },
+  {
+    name: "Uber Navigation",
+    canopy: "Uber",
+    backend: "Lead Developer",
+    year: "2018",
+    description:
+      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
+    languages: ["HTML", "Ruby on rails", "CSS", "JavaScript"],
+  },
+];
+
+const projectCardsDiv = document.querySelector(".project-cards");
+
+// Add each project card to the project-cards div
+projects.forEach((project) => {
+  const cardDiv = document.createElement("div");
+  cardDiv.innerHTML = `
+    <div class="grid_desktop grid_card">
+      <h2>${project.name}</h2>
+      <ul class="dcan">
+        <li class="dcanopy">${project.canopy}</li>
+        <li class="dbackend">${project.backend}</li>
+        <li class="dtwenty">${project.year}</li>
+      </ul>
+      <p>${project.description}</p>
+      <ul class="dlang">
+        <li class="dhtml">${project.languages[0]}</li>
+        <li class="dcss">${project.languages[1]}</li>
+        <li class="djs">${project.languages[2]}</li>
+        <li class="djs">${project.languages[3]}</li>
+      </ul>
+      <button class="dseepro">See project</button>
+    </div>
+  `;
+  projectCardsDiv.appendChild(cardDiv);
+});
+
 const data = [
   {
     imgSrc: "./Asset/nasir.svg",
@@ -123,7 +188,7 @@ const popy = [
     role: "Back End Dev",
     year: "2015",
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     languages: ["HTML", "CSS", "JavaScript"],
   },
   {
@@ -133,7 +198,7 @@ const popy = [
     role: "Back End Dev",
     year: "2015",
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     languages: ["HTML", "CSS", "JavaScript"],
   },
   {
@@ -143,7 +208,7 @@ const popy = [
     role: "Back End Dev",
     year: "2015",
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     languages: ["HTML", "CSS", "JavaScript"],
   },
   {
@@ -153,7 +218,7 @@ const popy = [
     role: "Back End Dev",
     year: "2015",
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     languages: ["HTML", "CSS", "JavaScript"],
   },
 ];
@@ -170,7 +235,7 @@ seeprobtns.forEach((btn, index) => {
     popupContainer.innerHTML = html;
     popupContainer.style.display = "block";
 
-    const closeBtn = document.querySelector(".popup-close-btn");
+    const closeBtn = document.querySelector(".close");
     closeBtn.addEventListener("click", () => {
       popupContainer.style.display = "none";
     });
@@ -189,7 +254,22 @@ function popup(parram) {
     console.error("Invalid parameter: ", parram);
     return;
   }
-  const html = `<div><div class="pone"><h1>${popy[parram].title}</h1> <img src="${popy[parram].imgSrc}"></img></div> <button class="popup-close-btn"></button> </div>`;
+  const html = `<div class="pone"> <span class="close">&times;</span><h1>${
+    popy[parram].title
+  }</h1><ul class="po"><li><span class="canop">${
+    popy[parram].canopy
+  }</span> <span class="role">${
+    popy[parram].role
+  }</span>  <span class="year"> ${
+    popy[parram].year
+  }</span> </li></ul><img src="${popy[parram].imgSrc}"></img><p>${
+    popy[parram].description
+  }</p> <ul class="hcj">
+  ${popy[parram].languages
+    .map((lang) => `<li class="pop_language">${lang}</li>`)
+    .join("")}
+</ul> <button class="popnewa">See live</button> <button class="popnewb">See source</button>
+</div> `;
 
   return html;
 }
@@ -198,14 +278,6 @@ const seeprobtn = document.querySelectorAll(".seepro");
 
 for (let i = 0; i < seeprobtn.length; i++) {
   seeprobtn[i].addEventListener("click", () => {
-    popup(0);
+    popup();
   });
 }
-
-/*
-seeprobtn.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    popup(0);
-  }); 
-});
-*/

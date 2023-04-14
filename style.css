@@ -688,7 +688,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 12px;
     width: 80%;
     height: 80%;
     background-color: #ffffff;
@@ -698,7 +697,7 @@ body {
     display: flex;
     top: 10px;
     left: 5%;
-    width: 90%;
+    width: 92%;
     height: 100%;
     display: none;
     justify-content: center;
@@ -709,9 +708,12 @@ body {
   .pone {
     background-color: white;
     padding: 20px;
+    height: 100%;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(10px);
   }
 
   .pone h1 {
@@ -719,15 +721,129 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    line-height: 44px;
+    line-height: 0px;
+    margin-left: 1%;
     float: left;
-    margin-left: 3%;
+    margin-top: -5%;
   }
 
   .pone img {
     width: 95%;
     height: auto;
-    margin-top: 20px;
+  }
+
+  .pone p {
+    margin-top: 1%;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+
+    color: #344563;
+  }
+  .po {
+    float: left;
+    margin-left: 10px;
+  }
+  .canop {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #344563;
+    margin-left: -2%;
+  }
+
+  .role {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    margin-left: 1%;
+
+    color: #7a869a;
+  }
+  li {
+    list-style-type: none;
+  }
+  .year {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    margin-left: 1%;
+
+    color: #7a869a;
+  }
+
+  ul.hcj {
+    display: flex;
+    margin-left: 5%;
+    margin-top: 1%;
+  }
+
+  .pop_language {
+    display: inline-block;
+    background-color: #ebebff;
+    padding: 5px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  li.pop_language {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    padding: 3px -10px 1px 15px;
+    color: #6070ff;
+  }
+  .popnewa {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 40%;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    color: #6070ff;
+    background-color: white;
+    font-size: 23px;
+    background-image: url(/assets/livedemo.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-position-x: 90%;
+    background-size: 15%;
+  }
+
+  .popnewb {
+    margin-left: 20px;
+    margin-top: -20px;
+    width: 40%;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    color: #6070ff;
+    background-color: white;
+    font-size: 23px;
+    background-image: url(/assets/popgit.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-position-x: 98%;
+    background-size: 15%;
+  }
+
+  .close {
+    font-size: 30px;
+    font-weight: bold;
+    color: #67798e;
+    margin-left: 98%;
+    cursor: pointer;
   }
 }
 
@@ -887,21 +1003,11 @@ body {
     transition: box-shadow 0.3s ease;
   }
 
-  .grid_desktop:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-  }
-
   .grid_desktopa {
     background-image: url(./Asset/proart.svg);
     background-position: right;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: box-shadow 0.3s ease;
-  }
-
-  .grid_desktopa:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   }
 
   .grid_desktopb {
@@ -912,21 +1018,11 @@ body {
     transition: box-shadow 0.3s ease;
   }
 
-  .grid_desktopb:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-  }
-
   .grid_desktopc {
     background-image: url(./Asset/uber.svg);
     background-position: right;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: box-shadow 0.3s ease;
-  }
-
-  .grid_desktopc:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   }
 
   .grid_desktop h2 {
@@ -1027,7 +1123,7 @@ body {
   }
 
   .dcss {
-    width: 60px;
+    width: 110px;
     height: 28px;
     border-radius: 8px;
     background: #ebebff;
