@@ -73,6 +73,10 @@ body {
     list-style: none;
   }
 
+  li {
+    list-style-type: none;
+  }
+
   .navbar li {
     padding: 10px;
   }
@@ -528,6 +532,11 @@ body {
     background: #ebebff;
   }
 
+  .pone img {
+    width: 95%;
+    height: auto;
+  }
+
   .lang_drop li img {
     position: relative;
     top: 10px;
@@ -684,14 +693,16 @@ body {
     color: white;
     border-color: #2230d2;
   }
+
   .popup {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80%;
     height: 80%;
-    background-color: #ffffff;
+    background-color: #fff;
   }
+
   .popup-container {
     position: fixed;
     display: flex;
@@ -699,7 +710,6 @@ body {
     left: 5%;
     width: 92%;
     height: 100%;
-    display: none;
     justify-content: center;
     align-items: center;
     z-index: 999;
@@ -717,7 +727,7 @@ body {
   }
 
   .pone h1 {
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -727,27 +737,23 @@ body {
     margin-top: -5%;
   }
 
-  .pone img {
-    width: 95%;
-    height: auto;
-  }
-
   .pone p {
     margin-top: 1%;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-
     color: #344563;
   }
+
   .po {
     float: left;
     margin-left: 10px;
   }
+
   .canop {
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -757,26 +763,22 @@ body {
   }
 
   .role {
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
     margin-left: 1%;
-
     color: #7a869a;
   }
-  li {
-    list-style-type: none;
-  }
+
   .year {
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
     margin-left: 1%;
-
     color: #7a869a;
   }
 
@@ -793,6 +795,7 @@ body {
     margin-right: 10px;
     border-radius: 5px;
   }
+
   li.pop_language {
     font-size: 14px;
     font-weight: 500;
@@ -800,6 +803,7 @@ body {
     padding: 3px -10px 1px 15px;
     color: #6070ff;
   }
+
   .popnewa {
     margin-left: 10px;
     margin-top: 10px;
@@ -1123,7 +1127,7 @@ body {
   }
 
   .dcss {
-    width: 110px;
+    width: 60px;
     height: 28px;
     border-radius: 8px;
     background: #ebebff;
