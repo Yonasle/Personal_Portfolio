@@ -13,7 +13,6 @@ navLinks.forEach((link) => {
     mobileIcon.classList.remove("active");
   });
 });
-
 const data = [
   {
     imgSrc: "./Asset/nasir.svg",
@@ -115,6 +114,7 @@ data.forEach((item) => {
 
   container.appendChild(gridItem);
 });
+
 const popy = [
   {
     imgSrc: "./Asset/nasir.svg",
@@ -165,7 +165,7 @@ document.body.appendChild(popupContainer);
 function popup(param) {
   if (param < 0 || param >= popy.length) {
     // Handle the out-of-bounds case here
-    return param;
+    return;
   }
 
   const seeprobtns = document.querySelectorAll(".seepro");
@@ -215,10 +215,15 @@ function popup(param) {
   return html;
 }
 
-const seeprobtn = document.querySelectorAll(".seepro");
+seeprobtns.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    const html = generatePopupHTML(index);
+    popupContainer.innerHTML = html;
+    popupContainer.style.display = "block";
 
-for (let i = 0; i < seeprobtn.length; i += 1) {
-  seeprobtn[i].addEventListener("click", () => {
-    popup();
+    const closeBtn = popupContainer.querySelector(".close");
+    closeBtn.addEventListener("click", () => {
+      popupContainer.style.display = "none";
+    });
   });
-}
+});
