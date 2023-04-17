@@ -999,21 +999,6 @@ body {
     background-color: #fff;
   }
 
-  .project-info {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .img-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .img-container img {
-    margin-right: 1rem;
-    height: 100%;
-  }
-
   .grid_desktop h2 {
     width: 50%;
     height: 50%;
@@ -1036,7 +1021,6 @@ body {
     line-height: 24px;
   }
 
-  /* card     1  */
   .dcan {
     display: flex;
     width: 50%;
