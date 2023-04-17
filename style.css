@@ -73,6 +73,10 @@ body {
     list-style: none;
   }
 
+  li {
+    list-style-type: none;
+  }
+
   .navbar li {
     padding: 10px;
   }
@@ -309,7 +313,7 @@ body {
     color: #fff;
   }
 
-  .js {
+  .javascript {
     width: 92px;
     height: 28px;
     background: #ebebff;
@@ -318,13 +322,7 @@ body {
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
   }
 
-  .js:hover {
-    transform: scale(1.2) rotate(360deg);
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
-    background: #172b4d;
-  }
-
-  li.js {
+  li.javascript {
     font-size: 12px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
@@ -332,7 +330,13 @@ body {
     color: #6070ff;
   }
 
-  li.js:hover {
+  .javascript:hover {
+    transform: scale(1.2) rotate(360deg);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+    background: #172b4d;
+  }
+
+  li.javascript:hover {
     font-size: 14px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
@@ -528,6 +532,11 @@ body {
     background: #ebebff;
   }
 
+  .pone img {
+    width: 95%;
+    height: auto;
+  }
+
   .lang_drop li img {
     position: relative;
     top: 10px;
@@ -679,17 +688,165 @@ body {
     border-color: #091e42;
   }
 
-  hr {
-    border-top: 5px solid black;
-    border-radius: 10px;
-    margin-top: 25%;
-    margin-left: 35%;
-  }
-
   .submit:active {
     background-color: #091e42;
     color: white;
     border-color: #2230d2;
+  }
+
+  .popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+  }
+
+  .popup-container {
+    position: fixed;
+    display: flex;
+    top: 10px;
+    left: 5%;
+    width: 92%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pone {
+    background-color: white;
+    padding: 20px;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(10px);
+  }
+
+  .pone h1 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 0px;
+    margin-left: 1%;
+    float: left;
+    margin-top: -5%;
+  }
+
+  .pone p {
+    margin-top: 1%;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .po {
+    float: left;
+    margin-left: 10px;
+  }
+
+  .canop {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #344563;
+    margin-left: -2%;
+  }
+
+  .role {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    margin-left: 1%;
+    color: #7a869a;
+  }
+
+  .year {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    margin-left: 1%;
+    color: #7a869a;
+  }
+
+  ul.hcj {
+    display: flex;
+    margin-left: 5%;
+    margin-top: 1%;
+  }
+
+  .pop_language {
+    display: inline-block;
+    background-color: #ebebff;
+    padding: 5px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+
+  li.pop_language {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    padding: 3px -10px 1px 15px;
+    color: #6070ff;
+  }
+
+  .popnewa {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 40%;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    color: #6070ff;
+    background-color: white;
+    font-size: 23px;
+    background-image: url(/assets/livedemo.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-position-x: 90%;
+    background-size: 15%;
+  }
+
+  .popnewb {
+    margin-left: 20px;
+    margin-top: -20px;
+    width: 40%;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    color: #6070ff;
+    background-color: white;
+    font-size: 23px;
+    background-image: url(/assets/popgit.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-position-x: 98%;
+    background-size: 15%;
+  }
+
+  .close {
+    font-size: 30px;
+    font-weight: bold;
+    color: #67798e;
+    margin-left: 98%;
+    cursor: pointer;
   }
 }
 
@@ -829,7 +986,8 @@ body {
   }
 
   .grid_card {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     grid-column: 1;
     width: 95%;
     margin-left: 5%;
@@ -841,54 +999,19 @@ body {
     background-color: #fff;
   }
 
-  .grid_desktop {
-    background-image: url(./Asset/arteto.svg);
-    background-position: left;
-    background-position-x: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: box-shadow 0.3s ease;
+  .project-info {
+    display: flex;
+    flex-direction: column;
   }
 
-  .grid_desktop:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  .img-container {
+    display: flex;
+    flex-direction: column;
   }
 
-  .grid_desktopa {
-    background-image: url(./Asset/proart.svg);
-    background-position: right;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: box-shadow 0.3s ease;
-  }
-
-  .grid_desktopa:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-  }
-
-  .grid_desktopb {
-    background-image: url(./Asset/facebook.svg);
-    background-position: left;
-    background-position-x: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: box-shadow 0.3s ease;
-  }
-
-  .grid_desktopb:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-  }
-
-  .grid_desktopc {
-    background-image: url(./Asset/uber.svg);
-    background-position: right;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: box-shadow 0.3s ease;
-  }
-
-  .grid_desktopc:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  .img-container img {
+    margin-right: 1rem;
+    height: 100%;
   }
 
   .grid_desktop h2 {
@@ -896,7 +1019,6 @@ body {
     height: 50%;
     font-family: "Poppins", sans-serif;
     margin-top: 5%;
-    margin-left: 60%;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -905,10 +1027,9 @@ body {
   }
 
   .grid_desktop p {
-    width: 39%;
+    width: 90%;
     height: 50px;
-    margin-left: 61%;
-    margin-top: -10%;
+    margin-top: -35%;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -923,9 +1044,9 @@ body {
     color: #7a869a;
     font-size: 16px;
     line-height: 16px;
-    margin-top: -6%;
-    margin-left: 61%;
-    gap: 8px;
+    margin-top: -20%;
+    margin-left: 3%;
+    gap: 40%;
   }
 
   li.dcanopy {
@@ -951,8 +1072,8 @@ body {
   .dlang {
     display: flex;
     list-style-type: none;
-    margin-top: -10%;
-    margin-left: 57%;
+    margin-top: -25%;
+    margin-left: -10%;
     gap: 20px;
   }
 
@@ -1051,10 +1172,9 @@ body {
   }
 
   .dseepro {
-    margin-left: 61%;
-    margin-top: -10%;
-    width: 15%;
-    height: 50%;
+    margin-top: 25%;
+    width: 20%;
+    height: 10%;
     cursor: pointer;
     border: 1px solid;
     border-radius: 10px;
@@ -1076,7 +1196,6 @@ body {
     border-color: #2230d2;
   }
 
-  /* Card 2 */
   .grid_desktopa h2 {
     width: 50%;
     height: 50%;
@@ -1091,10 +1210,10 @@ body {
   }
 
   .grid_desktopa p {
-    width: 39%;
+    width: 90%;
     height: 50px;
     margin-left: 5%;
-    margin-top: -10%;
+    margin-top: -25%;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -1103,14 +1222,14 @@ body {
 
   .rcan {
     display: flex;
-    width: 50%;
+    width: 70%;
     height: 50%;
     color: #7a869a;
     font-size: 16px;
     line-height: 16px;
-    margin-top: -5%;
+    margin-top: -20%;
     margin-left: 5%;
-    gap: 8px;
+    gap: 40px;
   }
 
   li.rcanopy {
@@ -1125,12 +1244,10 @@ body {
 
   li.rbackend {
     width: 100%;
-    margin-left: -35%;
   }
 
   li.rtwenty {
     width: 90%;
-    margin-left: -33%;
   }
 
   .social {
@@ -1145,7 +1262,7 @@ body {
   .rlang {
     display: flex;
     list-style-type: none;
-    margin-top: -10%;
+    margin-top: -14%;
     margin-left: -5%;
     gap: 20px;
   }
@@ -1277,9 +1394,9 @@ body {
 
   .rseepro {
     margin-left: 5%;
-    margin-top: -10%;
-    width: 15%;
-    height: 50%;
+    margin-top: 20%;
+    width: 20%;
+    height: 10%;
     cursor: pointer;
     border: 1px solid;
     border-radius: 10px;
@@ -1303,11 +1420,11 @@ body {
 
   /* Card 3 */
   .grid_desktopb h2 {
-    width: 50%;
+    width: 90%;
     height: 50%;
     font-family: "Poppins", sans-serif;
     margin-top: 8%;
-    margin-left: 61%;
+    margin-left: 10%;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -1316,10 +1433,10 @@ body {
   }
 
   .grid_desktopb p {
-    width: 39%;
+    width: 75%;
     height: 50px;
-    margin-left: 61%;
-    margin-top: -10%;
+    margin-left: 10%;
+    margin-top: -30%;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -1333,8 +1450,8 @@ body {
     color: #7a869a;
     font-size: 16px;
     line-height: 16px;
-    margin-top: -5%;
-    margin-left: 61%;
+    margin-top: -28%;
+    margin-left: 10%;
     gap: 8px;
   }
 
@@ -1350,19 +1467,17 @@ body {
 
   li.bbackend {
     width: 100%;
-    margin-left: -35%;
   }
 
   li.btwenty {
     width: 90%;
-    margin-left: -33%;
   }
 
   .blang {
     display: flex;
     list-style-type: none;
-    margin-top: -10%;
-    margin-left: 57%;
+    margin-top: -12%;
+    margin-left: 1%;
     gap: 20px;
   }
 
@@ -1484,10 +1599,10 @@ body {
   }
 
   .bseepro {
-    margin-left: 61%;
-    margin-top: -10%;
-    width: 15%;
-    height: 50%;
+    margin-left: 10%;
+    margin-top: 15%;
+    width: 20%;
+    height: 10%;
     cursor: pointer;
     border: 1px solid;
     border-radius: 10px;
@@ -1525,10 +1640,10 @@ body {
   }
 
   .grid_desktopc p {
-    width: 39%;
+    width: 90%;
     height: 50px;
     margin-left: 5%;
-    margin-top: -10%;
+    margin-top: -22%;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -1542,14 +1657,14 @@ body {
     color: #7a869a;
     font-size: 16px;
     line-height: 16px;
-    margin-top: -5%;
+    margin-top: -20%;
     margin-left: 5%;
-    gap: 8px;
+    gap: 14px;
   }
 
   li.ccanopy {
     list-style-type: none;
-    width: 100%;
+    width: 70%;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-size: 18px;
@@ -1559,18 +1674,16 @@ body {
 
   li.cbackend {
     width: 100%;
-    margin-left: -35%;
   }
 
   li.ctwenty {
     width: 90%;
-    margin-left: -33%;
   }
 
   .clang {
     display: flex;
     list-style-type: none;
-    margin-top: -10%;
+    margin-top: -20%;
     margin-left: -5%;
     gap: 20px;
   }
@@ -1702,9 +1815,9 @@ body {
 
   .cseepro {
     margin-left: 5%;
-    margin-top: -10%;
-    width: 15%;
-    height: 50%;
+    margin-top: 18%;
+    width: 20%;
+    height: 10%;
     cursor: pointer;
     border: 1px solid;
     border-radius: 10px;
