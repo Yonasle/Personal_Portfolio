@@ -192,6 +192,7 @@ function popup(parram) {
 
   return html;
 }
+
 const seeprobtns = document.querySelectorAll('.seepro');
 seeprobtns.forEach((btn, index) => {
   btn.addEventListener('click', () => {
