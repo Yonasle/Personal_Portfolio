@@ -939,6 +939,11 @@ body {
     margin-left: 20%;
   }
 
+  .one {
+    position: relative;
+    float: right;
+  }
+
   .base h1 {
     height: 122px;
     width: 70%;
@@ -987,16 +992,26 @@ body {
 
   .grid_card {
     display: flex;
-    justify-content: space-between;
     grid-column: 1;
     width: 95%;
     margin-left: 5%;
     border-radius: 20px;
     height: 560px;
     margin-bottom: 80px;
-    background-size: 50%;
     background-repeat: no-repeat;
     background-color: #fff;
+  }
+
+  .two,
+  .four {
+    float: left;
+    width: 80vw;
+    margin-left: 50%;
+  }
+
+  .one,
+  .three {
+    float: right;
   }
 
   .grid_desktop h2 {
