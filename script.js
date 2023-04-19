@@ -58,10 +58,13 @@ const data = [
 
 const container = document.querySelector('.grid_container');
 
-data.forEach((item) => {
+data.forEach((item, index) => {
   const gridItem = document.createElement('div');
   gridItem.classList.add('grid_item');
 
+  if (index % 2 === 1) {
+    gridItem.classList.add('right');
+  }
   const img = document.createElement('img');
   img.src = item.imgSrc;
   img.alt = 'card image';
