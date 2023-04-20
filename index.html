@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" href="fontawesome-free-5.15.3-web/css/all.css"/>
+       
   </head>
   <body>
     <header>
@@ -92,7 +93,7 @@
       </div>
     </section>
     <section class="contact" id="contact">
-      <div class="descr">
+    <div class="descr">
         <h1>Contact me</h1>
         <p>
           If you have an application you are interested in developing, a feature
@@ -102,26 +103,34 @@
         <form action="https://formspree.io/f/mdovljrd" method="POST">
           <ul class="the-relative">
             <li class="tname">
+              <label for="username"></label>
               <input
                 type="text"
                 name="username"
+                id="username"
                 maxlength="30"
                 placeholder="Your name"
                 required
               />
             </li>
-            <li class="mail">
+            <li class="mail" id="myform">
+              <label for="email"></label>
               <input
                 type="email"
                 name="email"
+                id="email"
                 placeholder="Your email"
                 required
               />
+              <span class="error-icon" id="email-error"><i class="fas fa-exclamation-circle"></i></span>
+              <span class="error-message"></span>
             </li>
             <li class="texts">
+              <label for="message"></label>
               <input
                 type="text"
-                name="Message"
+                name="message"
+                id="message"
                 maxlength="500"
                 class="text-area"
                 placeholder="Write your message here..."
@@ -130,8 +139,7 @@
             </li>
           </ul>
           <button class="submit">Get in touch</button>
-        </form>
-      </div>
+       </div>
     </section>
   </body>
   <script src="./script.js"></script>

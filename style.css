@@ -1639,3 +1639,27 @@ body {
     display: none;
   }
 }
+
+.error {
+  border: 2px solid red;
+}
+
+.error-icon {
+  color: red;
+}
+
+.mail.error .error-icon {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.error-message {
+  color: red;
+  width: 50%;
+  float: left;
+  margin-left: 20%;
+}
+
+.mail.error #email {
+  border-color: red;
+}

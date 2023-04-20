@@ -217,3 +217,29 @@ for (let i = 0; i < seeprobtn.length; i += 1) {
     popup(0);
   });
 }
+
+const emailInput = document.getElementById('email');
+const errorIcon = document.querySelector('.error-icon');
+const errorMessage = document.querySelector('.error-message');
+
+emailInput.addEventListener('input', () => {
+  const emailValue = emailInput.value.trim();
+
+  // Regular expression to match lowercase letters in email
+  const regex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+
+  // Check if the input email matches the regex pattern
+  if (regex.test(emailValue)) {
+    emailInput.setCustomValidity('');
+    emailInput.classList.remove('error');
+    errorIcon.style.display = 'none';
+    errorMessage.textContent = '';
+  } else {
+    emailInput.setCustomValidity(
+      'Please enter a valid email address with lowercase letters only and only',
+    );
+    emailInput.classList.add('error');
+    errorIcon.style.display = 'inline-block';
+    errorMessage.textContent = 'Please enter a valid email address with lowercase letters only';
+  }
+});
