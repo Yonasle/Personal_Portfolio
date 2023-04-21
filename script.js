@@ -243,3 +243,29 @@ emailInput.addEventListener('input', () => {
     errorMessage.textContent = 'Please enter a valid email address with lowercase letters only';
   }
 });
+
+const usernameField = document.querySelector('#username');
+const emailField = document.querySelector('#email');
+const messageField = document.querySelector('#message');
+
+function saveFormData() {
+  const formData = {
+    username: usernameField.value,
+    email: emailField.value,
+    message: messageField.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+
+usernameField.addEventListener('input', saveFormData);
+emailField.addEventListener('input', saveFormData);
+messageField.addEventListener('input', saveFormData);
+
+window.addEventListener('load', () => {
+  const storedData = JSON.parse(localStorage.getItem('formData'));
+  if (storedData) {
+    usernameField.value = storedData.username;
+    emailField.value = storedData.email;
+    messageField.value = storedData.message;
+  }
+});
